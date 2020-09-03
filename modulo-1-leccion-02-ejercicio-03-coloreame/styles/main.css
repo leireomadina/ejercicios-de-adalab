@@ -1,0 +1,8 @@
+/*el color es una propiedad que se hereda. Si al <aside> con clase .links le aplicamos una regla que ponga el texto rojo, ¿qué quedará en rojo?
+ */
+
+.links {
+    color: red;
+}
+
+/* podríamos de primeras pensar que todo el contenido de texto anidado dentro del aside aparecerá en rojo, pero el user agent stylesheet de los navegadores sobreescribe a nuestro color rojo dentro de los links: éstos apacerán en azul*/
