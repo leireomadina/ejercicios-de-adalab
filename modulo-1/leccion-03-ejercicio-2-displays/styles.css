@@ -1,0 +1,32 @@
+body {
+  margin: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.inline {
+  display: inline;
+  /* can't define a width and height to an inline element */
+  /* width: 100px;
+  height: 100px; */
+  background-color: blueviolet;
+  color: white;
+}
+
+/* this inline-block element will be rendered on the same line as the previous inline element */
+.inline-block {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  padding: 10px;
+}
+
+/* this last box will be on his own new line at the bottom */
+.block {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: lightseagreen;
+  padding: 10px;
+}
