@@ -1,0 +1,29 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  box-sizing: content-box; /* modelo de caja por defecto */
+  width: 100px; /* la dimensión inicial del container es 100x100px */
+  height: 100px;
+  margin: 20px auto;
+  background-color: lightpink;
+  padding: 10px;   /* la dimensión del container es ahora 120x120px */
+  border: 5px solid blue;   /* la dimensión del container es ahora 130x130px */
+}
+
+.container-2 {
+  box-sizing: border-box;
+  /* si cambiamos el modelo de caja a border-box la img ya no entra dentro del container, ya que éste siempre va a tener unas dimensiones fijas de 100x100px: se produce overflow */
+  overflow: scroll; 
+}
+
+image {
+  width: 100px;
+  height: 100px;
+}
