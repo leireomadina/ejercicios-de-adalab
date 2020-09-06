@@ -1,0 +1,33 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 30px;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+mark {
+  padding-left: 8px;
+  padding-right: 8px;
+  /* inline-elements can have horizontal padding or margin styles, but are ignored when defining its height or vertical position */
+  color: blue;
+  background-color: pink;
+  font-weight: bold;
+}
+
+/* modifying the default inline display of the mark tag so that we can give it a height and vertical padding property */
+.highlighted {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 10px 0;
+}
