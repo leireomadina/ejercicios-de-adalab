@@ -14,13 +14,13 @@ h1 {
   text-align: center;
 }
 
-/* <p> es un elemento de bloque, mientras que <img> es un elemento de línea: si anidamos una imagen dentro de un párrafo, la img aparecerá renderizada siguiendo la propia línea del texto */
+/* <p> es un elemento de bloque, mientras que <img> es un elemento de línea: si anidamos una imagen dentro de un párrafo, la img aparecerá renderizada siguiendo la propia línea del texto (no se fuerza un salto de línea) */
 .image-nested {
   width: 100px;
   height: auto;
 }
 
-/* esta imagen aparecerá renderizada en su propia línea, ya que no está anidada, sino que se encuentra entre dos párrafos cuyo display por defecto es block */
+/* esta imagen aparecerá renderizada en su propia línea, ya que no está anidada, sino que se encuentra entre dos párrafos cuyo display por defecto es block: ambos fuerzan un salto de línea */
 .image-2 {
   width: 200px;
   height: auto;
