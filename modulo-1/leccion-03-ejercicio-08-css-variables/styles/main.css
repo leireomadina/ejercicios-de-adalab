@@ -1,0 +1,63 @@
+:root {
+  /*Definimos variables de CSS para propiedades cuyos valores se repiten a lo largo del código*/
+  --links-color: green;
+  --text-color: grey;
+  --margin-reset: 0px;
+  --main-padding: 20px;
+}
+
+body {
+  /* margin: 0; */
+  margin: var(--margin-reset);
+  font-family: 'Roboto', sans-serif; /* importado de Google Fonts */
+}
+
+header {
+  background-color: #eaeaea;
+  /* padding: 20px; */
+  padding: var(--main-padding);
+}
+
+main {
+  /* padding: 20px; */
+  padding: var(--main-padding);
+}
+
+p {
+  width: 50%;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.title {
+  /* color: grey; */
+  color: var(--text-color);
+  /* margin: 0; */
+  margin: var(--margin-reset);
+}
+
+.subtitle {
+  /* color: grey; */
+  color: var(--text-color);
+  /* margin: 0; */
+  margin: var(--margin-reset);
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  /* color: green; */
+  color: var(--links-color);
+  text-decoration: none;
+}
+
+p a {
+  /* color: green; */
+  color: var(--links-color);
+}
