@@ -1,0 +1,25 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: purple;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px dotted purple;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* so that the images can go to the next line when the space is filled*/
+}
+
+.image {
+  display: block;
+  width: 200px;
+  height: auto;
+}
