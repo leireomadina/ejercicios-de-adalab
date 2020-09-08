@@ -1,0 +1,68 @@
+/* reset styles */
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* main styles */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center; /* centramos todos los textos */
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; /* ancho total del conjunto */
+  max-width: 960px; /* máxima anchura del conjunto */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: orangered;
+  padding: 20px;
+}
+
+.container {
+  /* to define a sticky footer */
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  /* same as the shortcut "flex: 1;" */
+  display: flex;
+  flex-direction: row;
+}
+
+.article {
+  background-color: lightblue;
+  text-align: left;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.aside {
+  width: 30%;
+  padding: 10px 20px;
+}
+
+.aside-1 {
+  background-color: yellow;
+}
+
+.aside-2 {
+  background-color: palevioletred;
+}
+
+.footer {
+  background-color: palegreen;
+  padding: 20px;
+}
