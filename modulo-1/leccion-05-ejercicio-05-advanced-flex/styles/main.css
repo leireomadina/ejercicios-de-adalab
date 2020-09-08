@@ -1,11 +1,10 @@
-
 body {
   margin: 0;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-} 
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
 h1,
 h2,
@@ -22,9 +21,10 @@ h3 {
 .main-content {
   background-color: gray;
   flex-grow: 1; /* to get all the remaining space on the screen */
-  flex-shrink: 1; 
+  flex-shrink: 1;
   flex-basis: 0;
   /* flex: 1 is an abbreviation of the code above */
+  overflow: auto; /* to make sure we have an sticky footer at the end */
 }
 
 .footer {
