@@ -1,0 +1,53 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/******* media queries *******/
+
+/* tablet */
+@media (min-width: 768px) {
+  
+  .wrapper {
+   margin: 1.875rem 2.5rem 0 2.5rem;
+   font-size: 1rem;
+   line-height: 1.25rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+}
+
+/* desktop */
+
+@media (min-width: 1140px) {
+  
+  .wrapper {
+   margin: 11.88rem auto 0 auto;
+   max-width: 750px;
+   font-size: 1.5rem;
+   line-height: 2rem;
+  }
+
+  .title {
+    font-size: 2.625rem;
+  }
+
+}
