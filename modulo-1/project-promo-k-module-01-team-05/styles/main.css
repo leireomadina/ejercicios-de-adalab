@@ -1,14 +1,15 @@
-
 /************** GENERAL styles ***************/
 
+/* * {
+  box-sizing: border-box;
+} */
+
 body {
-  font-family: 'Rubik', sans-serif; /* 400 y 500 weight cargados en link */
+  font-family: "Rubik", sans-serif; /* 400 y 500 weight cargados en link */
   font-size: 1rem; /* 24px */
 }
 
-
 /************** ADALABERS section styles ***************/
-
 
 .adalabers {
   text-align: center;
@@ -18,45 +19,52 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1.88;
-
 }
 .adalabers-card {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 1rem; /* 16px */
   background-color: lightgoldenrodyellow;
-
 }
 
-.adalabers-card-image {
-  height: 180px; /* relative unit better? */
-  width: auto;
+/* container for a responsive img */
+.card-image-container {
+  margin: 0 auto;
+  max-width: 180px;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
   border: solid 5px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
 }
 
-.adalabers-card-name {
+.card-info-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card-name {
   line-height: 2.25;
-
 }
 
-.adalabers-card-text {
+.card-text {
   line-height: 1.5;
-
 }
 
-.adalabers-card-list {
+.card-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  width: 100vw; /* me da error con width: 100% y no sé por qué :( */
+  /* su elemento padre es el card-info-container */
+  /* width: 100%; */
   background-color: lightsalmon;
 }
 
-.adalabers-card-item {
+.card-item {
+Ñ}
 
-}
-
-.adalabers-card-link {
+.card-link {
   color: black;
   text-decoration: none;
 }
