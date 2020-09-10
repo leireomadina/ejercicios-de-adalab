@@ -1,0 +1,11 @@
+.img {
+  height: 300px;
+}
+
+.img-container {
+  height: 400px;
+  background-image: url(../images/mi-foto.jpg);
+  /* la ruta de la imagen también es relativa: llamamos a la carpeta madre */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
