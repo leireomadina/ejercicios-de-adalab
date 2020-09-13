@@ -1,0 +1,85 @@
+/* reset styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* main styles */
+
+.main-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 2rem;
+  color: #cc212a;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title-block {
+  display: block;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid #cc212a;
+  font-size: 1.25rem;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* turns a square into a circle */
+  background-color: #cc212a;
+  color: white;
+  transform: translateY(-50%); /* moves the circle upwards */
+  text-align: center; /* to center the "R" letter horizontally */
+  line-height: 50px; /* to center the "R" letter vertically */
+}
+
+.copy {
+  margin-bottom: 30px;
+  color: rgb(87, 87, 87);
+}
+
+
+/* media queries: tablet & deskopt */
+
+@media all and (min-width: 768px) {
+  
+  .title {
+    font-size: 3rem;
+  }
+
+  .footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .logo {
+    transform: translateY(0);
+  }
+
+  .copy {
+    margin: 0;
+  }
+}
