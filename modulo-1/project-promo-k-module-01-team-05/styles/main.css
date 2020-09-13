@@ -26,9 +26,8 @@ ul {
 
 .adalabers-wrapper {
   margin: 0 30px;
-  /* background-color: lightgreen; */
-  padding-top: 30px; /* o margin-top? */
-  padding-bottom: 45px; /* o margin-bottom? */
+  padding-top: 30px; 
+  padding-bottom: 45px; 
 }
 
 .adalabers-title {
@@ -50,7 +49,7 @@ ul {
   margin: 0 auto;
   max-width: 180px;
   max-height: 180px;
-  overflow: hidden; /* ??? */
+  overflow: hidden; 
 }
 
 .card-image {
@@ -84,10 +83,6 @@ ul {
   width: 120px;
 }
 
-/* 
-.card-item {
-
-} */
 
 .card-link {
   color: black;
@@ -95,7 +90,6 @@ ul {
 }
 
 /* icons style and cosmetics*/
-
 .fab,
 .fas {
   color: #099d8d;
@@ -108,7 +102,7 @@ ul {
   padding: 5px; 
 } 
 
-/********* media queries ********/
+/********* media queries ADALABERS ********/
 
 /* tablet styles */
 
