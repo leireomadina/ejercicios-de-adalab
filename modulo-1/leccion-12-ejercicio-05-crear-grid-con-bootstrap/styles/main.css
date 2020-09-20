@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* .grid-container,
+.row {
+  display: grid;
+  grid-template-rows: 20vh 60vh 20vh;
+  grid-template-columns: repeat(12, 1fr);
+} */
+
+.row-main {
+  height: 60vh;
+}
+.row-small {
+  height: 20vh;
+}
+
+.header {
+  background-color: pink;
+}
+
+.menu {
+  background-color: purple;
+}
+
+.content {
+  background-color: coral;
+}
+
+.footer {
+  background-color: lightblue;
+}
+
+.header,
+.menu,
+.content,
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
