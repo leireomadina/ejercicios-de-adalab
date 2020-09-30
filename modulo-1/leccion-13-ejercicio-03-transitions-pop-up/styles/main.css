@@ -1,0 +1,36 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  margin: 0;
+  color: white;
+}
+
+.container {
+  height: 100vh;
+  background-color: lightgreen;
+  overflow: hidden;
+  /* para que no se genere scroll vertical debido al translate 100v */
+}
+
+.container:hover .pop-up {
+  transform: translate(50vw, 50vh);
+}
+/* seleccionamos tanto al container como al pop up contenido dentro para que la animación se ejecute en el pop up al hacer hover en el container */
+
+.pop-up {
+  display: inline-block;
+  padding: 10px;
+  background-color: lightcoral;
+  border: 1px solid red;
+  text-align: center;
+  /* para centrar horizontalmente el botón */
+  border-radius: 10%;
+  /* position: fixed;
+  bottom: -100px; */
+  /* esta era mi opcióon inicial, hacerlo con position fixed y un bottom negativo para hacer desaparecer al botón */
+  transform: translate(50vw, 100vh);
+  /* para que el pop up no se vea modificamos el translate Y, pero nos genera un problema de scroll que solucionamos con el overflow:hidden en el container */
+  /* modificamos el translate X para que el pop up quede en medio */
+  transition: transform ease 1s;
+  /* hay que meter la transicion en el estado inicial */
+}
