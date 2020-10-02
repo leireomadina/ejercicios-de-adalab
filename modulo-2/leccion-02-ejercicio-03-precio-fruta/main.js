@@ -10,11 +10,10 @@ const pearPrice = 2;
 const pearTotal = pearQuantity * pearPrice;
 console.log("Las peras cuestan " + pearTotal + " €.");
 
-const grapesQuantity = 2;
-const grapesPrice = 5;
+const grapesQuantity = 0.5;
+const grapesPrice = 4;
 const grapesTotal = grapesQuantity * grapesPrice;
 console.log("Las uvas cuestan " + grapesTotal + " €.");
 
 const totalPurchase = kiwisTotal + pearTotal + grapesTotal;
 console.log("La suma total de la compra son " + totalPurchase + " €.");
-
