@@ -1,0 +1,23 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+.success {
+  border: 1px solid darkgreen;
+  background-color: lightgreen;
+  color: darkgreen;
+}
+
+.error {
+  border: 1px solid darkred;
+  background-color: lightcoral;
+  color: darkred;
+}
+
+.warning {
+  border: rgb(131, 131, 1);
+  background-color: lightyellow;
+  color: rgb(131, 131, 1);
+}
