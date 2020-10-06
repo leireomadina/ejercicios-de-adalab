@@ -1,7 +1,8 @@
 "use strict";
 
 function getEl(selector) {
-  return document.querySelector(selector);
+  const element = document.querySelector(selector);
+  return element;
 }
 
 const h1El = getEl(".title");
