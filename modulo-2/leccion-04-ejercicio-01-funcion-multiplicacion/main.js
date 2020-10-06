@@ -1,12 +1,13 @@
 "use strict";
 
-function multiplication(num1, num2) {
-  return num1 * num2;
+function getMultiplication(num1, num2) {
+  const multiplication = num1 * num2;
+  return multiplication;
 }
 
-const multiplicationResult = multiplication(3, 5);
+const multiplicationResult = getMultiplication(3, 5);
 console.log(multiplicationResult);
 //returns 15
 
-console.log(multiplication(3, 5));
+console.log(getMultiplication(3, 5));
 //returns 15
