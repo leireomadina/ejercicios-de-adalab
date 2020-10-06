@@ -1,0 +1,17 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+.container {
+  padding: 30px;
+}
+
+.bg-coral {
+  background-color: lightcoral;
+}
+
+.bg-blue {
+  background-color: lightskyblue;
+}
