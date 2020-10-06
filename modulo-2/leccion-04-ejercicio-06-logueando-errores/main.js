@@ -2,9 +2,12 @@
 
 function getEl(selector) {
   const element = document.querySelector(selector);
-  if (element === null) {
+  const isElement = !!element;
+  if (isElement === false) {
     console.log(`No existe ningún elemento con clase, id o tag llamado ${selector}`);
-  } else return element;
+  } else {
+    return element;
+  }
 }
 
 const h1El = getEl(".title");
