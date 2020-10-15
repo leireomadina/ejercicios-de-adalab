@@ -1,5 +1,6 @@
 "use strict";
 
+/*
 const lostNumbers = [4, 8, 15, 16, 23, 42];
 
 function bestLostNumber () {
@@ -25,3 +26,27 @@ function bestLostNumber () {
 }
 
 bestLostNumber ();
+
+*/
+
+// Refractoring
+
+const lostNumbers = [4, 8, 15, 16, 23, 42];
+const evenNumbers = [];
+const oddNumbers = [];
+
+const bestLostNumber = function () {
+  for (let i = 0; i < lostNumbers.length; i++) {
+    if (lostNumbers[i] % 2 === 0) {
+      evenNumbers.push(lostNumbers[i]);
+    }
+    if (lostNumbers[i] % 3 === 0) {
+      oddNumbers.push(lostNumbers[i]);
+    }
+  }
+  console.log(evenNumbers.concat(oddNumbers));
+};
+
+bestLostNumber();
+console.log(evenNumbers);
+console.log(oddNumbers);

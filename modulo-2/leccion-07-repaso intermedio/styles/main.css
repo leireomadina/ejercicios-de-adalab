@@ -1,0 +1,39 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, san-serif;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.face {
+  font-size: 80px;
+  margin-bottom: 40px;
+}
+
+.container {
+  background-color: rgb(230, 216, 21);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.select {
+  border-radius: 5px;
+  width: 40px;
+}
+
+.button {
+  background-color: blue;
+  color: white;
+  font-size: 15px;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.fire-color {
+  background-color: orange;
+}

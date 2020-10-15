@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, san-serif;
+  margin: 40px;
+}
+
+.btn {
+  padding: 10px;
+  margin-right: 15px;
+  border-radius: 15px;
+  color: black;
+  background-color: rgb(241, 241, 241);
+}
+
+.alert {
+  background-color: red;
+}
