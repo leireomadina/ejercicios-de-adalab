@@ -1,5 +1,7 @@
 "use strict";
 
+/*
+
 function christmasTree(height) {
   for (let peak = "★"; peak.length <= 1; peak += "▲") {
     console.log(peak);
@@ -13,16 +15,15 @@ function christmasTree(height) {
 }
 
 christmasTree(5);
-
+*/
 //another way:
 
-/*
 function christmasTree(height) {
   let base = "|";
   let peak = "★";
   console.log(peak);
   let line = "";
-  for (let i= 1; i <= height; i++) {
+  for (let i = 1; i <= height; i++) {
     line += "▲";
     console.log(line);
   }
@@ -30,7 +31,3 @@ function christmasTree(height) {
 }
 
 christmasTree(5);
-*/
-
-
-
