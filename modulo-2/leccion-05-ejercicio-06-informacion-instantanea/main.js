@@ -4,8 +4,8 @@ const inputEl = document.querySelector(".input");
 const textEl = document.querySelector(".text");
 
 function AddInputText(event) {
-  textEl.innerHTML = event.currentTarget.value;
+  textEl.innerHTML = input.value;
 }
 
-inputEl.addEventListener("change", AddInputText);
+inputEl.addEventListener("keyup", AddInputText);
 
