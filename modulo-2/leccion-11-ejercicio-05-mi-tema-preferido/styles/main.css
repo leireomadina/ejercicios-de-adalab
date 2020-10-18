@@ -1,0 +1,14 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+}
+
+.dark {
+  background-color: rgb(39, 39, 39);
+  color: whitesmoke;
+}
+
+.light {
+  background-color: whitesmoke;
+  color: rgb(39, 39, 39);
+}
