@@ -8,7 +8,7 @@ inputName.addEventListener("keyup", saveData);
 inputSurname.addEventListener("keyup", saveData);
 
 function saveData() {
-  //creamos un objeto contener los datos del usuario y los asociamos con los values de los inputs
+  //creamos un objeto para contener los datos del usuario y los asociamos con los values de los inputs
   const userData = {
     name: inputName.value,
     surname: inputSurname.value
