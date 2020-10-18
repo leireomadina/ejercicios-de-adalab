@@ -3,31 +3,25 @@
 const inputName = document.querySelector(".js-name");
 const inputSurname= document.querySelector(".js-surname");
 const paragraphEl = document.querySelector(".js-text");
-const paragraphEl2 = document.querySelector(".js-text-2");
 
-inputName.addEventListener("keyup", saveName);
-inputSurname.addEventListener("keyup", saveName);
+inputName.addEventListener("keyup", saveData);
+inputSurname.addEventListener("keyup", saveData);
 
-const data = {
-  name: "",
-  surname: ""
+function saveData() {
+  //creamos un objeto contener los datos del usuario y los asociamos con los values de los inputs
+  const userData = {
+    name: inputName.value,
+    surname: inputSurname.value
+  }
+  //pintamos los values en un párrafo vacío
+  paragraphEl.innerHTML = `${userData.name} ${userData.surname}`;
+  //convertimos el objeto en una cadena para poder guardarlo en localStorage
+  localStorage.setItem("userData", JSON.stringify(userData));
 }
 
-function saveName() {
-  const selectedName = inputName.value;
-  console.log(selectedName);
-  paragraphEl.innerHTML =  selectedName;
-  const selectedSurname = inputSurname.value;
-  console.log(selectedSurname);
-  paragraphEl2.innerHTML =  selectedSurname;
+//volvemos a convertir los datos de cadena a objeto para poder recuperarlos con localStorage
+const savedData = JSON.parse(localStorage.getItem("userData"));
 
-  localStorage.setItem("name", inputName.value);
-  localStorage.setItem("surname", inputSurname.value);
-  // restoreName();
-}
-
-const savedName = localStorage.getItem("name");
-const savedSurname = localStorage.getItem("surname");
 console.log(savedName);
 console.log(savedSurname);
 
