@@ -2,15 +2,15 @@
 
 function christmasTree(height) {
   let line = "";
-  for (let i= 1; i <= height; i++) {
+  for (let i = 1; i <= height; i++) {
     line += "▲";
+    // line = line + "▲";
     console.log(line);
   }
   return line;
 }
 
 christmasTree(5);
-
 
 //another way:
 
@@ -23,6 +23,3 @@ function christmasTree(height) {
 anotherChristmasTree(5);
 
  */
-
-
-
