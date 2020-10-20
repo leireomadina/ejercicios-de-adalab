@@ -27,4 +27,4 @@ function changeTheme(event) {
   }
 }
 
-//hay que sacar los localStorage fuera de la función para que se guarden los temas al refrescar/cerrar la página
+//hay que sacar los localStorage fuera de la función para que se guarden los temas al refrescar/cerrar la página?
