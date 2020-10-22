@@ -24,5 +24,10 @@ Estamos haciendo muchas peticiones al servidor cada vez que alguien visita la we
 - [x] Darle estilos en CSS
 - [x] Pintar varias paletas
 - [] Marcar la paleta seleccionada por la usuaria como favorita
+  - [x] Escuchar el evento click sobre cada nave
+  - [x] Identificar el elemento clickado
+  - [x] Guardar los favoritos en un array
+  - [] Añadir la clase de favorito
+  - [] Quitar la clase de favorito
 - [] Filtrar paletas por nombre
-- [] Cachear las paletas en el navegador con localStorage
+- [x] Cachear las paletas en el navegador con localStorage
