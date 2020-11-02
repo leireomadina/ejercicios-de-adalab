@@ -53,9 +53,8 @@ class App extends React.Component {
       </footer>
     );
     
-    const appRoot = (
-      <div className="app">
-        {appTitle}
+    //creamos una constante que englobe toda la tarjeta 
+    const cardContainer =(
         <main>
           <article className="card">
             {cardHeader}
@@ -63,8 +62,16 @@ class App extends React.Component {
             {cardFooter}
           </article>
         </main>
+    );
+
+    //constante que contiene a toda la app, incluyendo el header/título "Mediacard" y toda la tarjeta dentro de su contenedor
+    const appRoot = (
+      <div className="app">
+        {appTitle}
+        {cardContainer}
       </div>
     );
+
     // Hacemos que el return nos devuelva solo una variable, la que contiene a toda la app
     return appRoot;
   }
