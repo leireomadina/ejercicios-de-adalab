@@ -12,28 +12,28 @@ class App extends React.Component {
     );
 
     const cardHeader = (
-      <header className="card-header">
+      <header className="card-profile">
         <img
-          className="card-image"
+          className="card-profile__image"
           alt="Imagen de Sophie Hatter"
           title="Imagen de Sophie Hatter"
           src={sophie}
         ></img>
-        <div className="card-data">
-          <h2 className="card-name">Sophie Hatter</h2>
-          <p className="card-date">November 02, 2020</p>
+        <div>
+          <h2 className="card-profile__name">Sophie Hatter</h2>
+          <p className="card-profile__date">November 02, 2020</p>
         </div>
       </header>
     );
 
     const cardBody = (
-      <section className="card-body">
-        <p className="card-text">
+      <section className="card-text">
+        <p className="card-text__paragraph">
           Sophie Hatter is the female protagonist and heroine of the first book
           in the Castle Series, Howl's Moving Castle, and of the movie Howl's
           Moving Castle, directed by Hayao Miyazaki.
         </p>
-        <p className="card-text">
+        <p className="card-text__paragraph">
           Sophie is a young woman living in the small town of Market Chipping in
           the kingdom of Ingary, and she is the eldest of three sisters. In the
           land of Ingary, this, of course, means that Sophie is destined to
@@ -44,11 +44,11 @@ class App extends React.Component {
     );
 
     const cardFooter = (
-      <footer className="card-footer">
-        <p className="card-footer-text">Read more...</p>
-        <div className="card-likes">
-          <p className="card-number">37</p>
-          <i class="fas fa-heart card-icon"></i>
+      <footer className="card-extras">
+        <p className="card-extras__text">Read more...</p>
+        <div className="card-extras__likes">
+          <p className="card-extras__number">37</p>
+          <i class="fas fa-heart card-extras__icon"></i>
         </div>
       </footer>
     );
