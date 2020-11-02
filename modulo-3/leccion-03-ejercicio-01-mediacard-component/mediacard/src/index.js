@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//ojo: debemos actualizar la ruta del archivo App tras haberlo movido a la carpeta components
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
