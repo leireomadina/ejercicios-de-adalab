@@ -18,7 +18,7 @@ function App() {
             ></img>
             <div className="card-data">
               <h2 className="card-name">Sophie Hatter</h2>
-              <p className="card-location">Howl's Moving Castle</p>
+              <p className="card-date">November 02, 2020</p>
             </div>
           </header>
           <section className="card-body">
@@ -37,10 +37,10 @@ function App() {
             </p>
           </section>
           <footer className="card-footer">
-            <p>Read more...</p>
+            <p className="card-footer-text">Read more...</p>
             <div className="card-likes">
               <p className="card-number">37</p>
-              <i class="fas fa-heart"></i>
+              <i class="fas fa-heart card-icon"></i>
             </div>
           </footer>
         </article>

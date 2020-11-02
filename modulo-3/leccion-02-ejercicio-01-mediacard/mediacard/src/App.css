@@ -1,5 +1,5 @@
 .App {
-  background-color: rgb(251, 251, 251);
+  background-color: rgb(243, 243, 243);
   min-height: 100vh;
   padding: 30px;
 }
@@ -10,18 +10,22 @@
 }
 
 .App-title {
-  color: rgb(20, 20, 20);
+  color: rgb(34, 34, 34);
   text-align: center;
 }
 
 /* CARD */
+
 .card {
   max-width: 600px;
-  background-color: rgb(182, 223, 248);
+  margin: 0 auto;
+  background-color: rgb(198, 235, 198);
   padding: 20px;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
 }
 
 /* CARD: header */
+
 .card-header {
   display: flex;
   justify-content: flex-start;
@@ -29,16 +33,19 @@
 
 }
 .card-image {
-  width: 150px;
+  width: 110px;
   height: auto;
   border-radius: 50%;
   margin-right: 30px;
 }
 
 .card-name {
+  font-size: 1.5rem;
+  color: rgb(53, 53, 53);
 }
 
-.card-location {
+.card-date {
+  color: rgb(53, 53, 53);
 
 }
 
@@ -50,6 +57,7 @@
 
 .card-text {
   margin: 20px 0;
+  color: rgb(53, 53, 53);
 }
 
 /* CARD: footer */
@@ -60,6 +68,21 @@
   align-items: center;
 }
 
-.fa-heart {
-  color: red;
+.card-footer-text{
+  color: rgb(124, 124, 124);
+}
+
+.card-likes {
+  display: flex;
+  align-items: center;
+}
+
+.card-number {
+  font-size: 1.3rem;
+  margin-right: 12px;
+}
+
+.card-icon {
+  color: rgb(207, 92, 92);
+  font-size: 2rem;
 }
