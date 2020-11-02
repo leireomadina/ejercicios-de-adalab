@@ -6,8 +6,8 @@ class App extends React.Component {
 
   render() {
     const appTitle = (
-      <header className="app-header">
-        <h1 className="app-title">Mediacard</h1>
+      <header className="app__header">
+        <h1 className="app__title">Mediacard</h1>
       </header>
     );
 

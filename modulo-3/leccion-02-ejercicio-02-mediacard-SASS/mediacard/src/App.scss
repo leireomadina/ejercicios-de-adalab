@@ -1,19 +1,19 @@
-@import 'var';
+@import 'vars';
 
 .app {
   background-color: $color-bg;
   min-height: 100vh;
   padding: 30px;
-}
 
-.app-header {
-  height: 150px;
-  font-size: 1.5rem;
-}
+  &__header{
+    height: 150px;
+    font-size: 1.5rem;
+  }
 
-.app-title {
-  color: $color-font-secondary;
-  text-align: center;
+  &__title {
+    color: $color-font-secondary;
+    text-align: center;
+  }
 }
 
 /* CARD */
