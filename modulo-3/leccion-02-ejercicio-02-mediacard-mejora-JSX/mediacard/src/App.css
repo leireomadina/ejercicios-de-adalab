@@ -1,15 +1,15 @@
-.App {
+.app {
   background-color: rgb(243, 243, 243);
   min-height: 100vh;
   padding: 30px;
 }
 
-.App-header {
+.app-header {
   height: 150px;
   font-size: 1.5rem;
 }
 
-.App-title {
+.app-title {
   color: rgb(34, 34, 34);
   text-align: center;
 }
