@@ -7,9 +7,9 @@ import calcifer from "../images/calcifer.png";
 const MediaList = (props) => {
   return (
     <section>
-      <h3>Lista de Mediacards</h3>
+      <h3 className="list-title">Howl's Moving Castle Cards</h3>
       <ul>
-        <li>
+        <li className="list-item">
           <Mediacard
             name="Sophie Hatter"
             date="November 02, 2020"
@@ -25,7 +25,7 @@ const MediaList = (props) => {
             heart="❤️"
           />
         </li>
-        <li>
+        <li className="list-item">
           <Mediacard 
             name="Howl Jenkins Pendragon"
             date="November 02, 2020"
@@ -36,7 +36,7 @@ const MediaList = (props) => {
             heart="❤️"
           />
         </li>
-        <li>
+        <li className="list-item">
           <Mediacard 
             name="Calcifer"
             date="November 03, 2020"

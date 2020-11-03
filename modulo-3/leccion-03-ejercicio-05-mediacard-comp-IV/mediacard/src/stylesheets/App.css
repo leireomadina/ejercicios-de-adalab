@@ -86,3 +86,14 @@
   color: rgb(207, 92, 92);
   font-size: 2rem;
 }
+
+.list-title{
+  color: rgb(34, 34, 34);
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.list-item {
+  margin-bottom: 30px;
+}
