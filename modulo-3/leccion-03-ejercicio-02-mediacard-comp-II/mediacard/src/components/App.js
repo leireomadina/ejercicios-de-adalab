@@ -1,7 +1,7 @@
 import React from 'react';
 import Mediacard from './Mediacard';
-import "../App.css";
-import sophie from '../sophie-hatter.jpg';
+import "../stylesheets/App.css";
+import sophie from '../images/sophie-hatter.jpg';
 
 
 function App() {
