@@ -23,10 +23,7 @@ function App() {
         home. She works in her late father's hat shop as her stepmother,
         Fanny Hatter's, apprentice."
         likes="37"
-        /* 
-        Duda: ¿cómo hacer lo del corazón relleno o no usando font awesome?
-        */
-       heart="❤️"
+        heart="❤️"
         />
       </main>
     </div>
