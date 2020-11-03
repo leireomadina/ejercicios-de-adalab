@@ -1,0 +1,12 @@
+.section-cats {
+  margin: 30px;
+}
+
+.section-cats_list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.section-cats_item {
+  padding: 5px 0;
+}
