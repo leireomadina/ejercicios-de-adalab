@@ -29,7 +29,8 @@ class Mediacard extends React.Component {
             <p className="card-footer-text">Read more...</p>
             <div className="card-likes">
               <p className="card-number">{this.props.likes}</p>
-              <i class="fas fa-heart card-icon"></i>
+              {/* <i class="fas fa-heart card-icon"></i> */}
+              <p className="card-icon">{this.props.heart}</p>
             </div>
           </footer>
         </article>

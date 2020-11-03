@@ -26,6 +26,7 @@ function App() {
         /* 
         Duda: ¿cómo hacer lo del corazón relleno o no usando font awesome?
         */
+       heart="❤️"
         />
       </main>
     </div>
