@@ -4,7 +4,7 @@ import sophie from "../images/sophie-hatter.jpg";
 import howl from "../images/howl.png";
 import calcifer from "../images/calcifer.png";
 
-const MediaList = (props) => {
+const MediaList = () => {
   return (
     <section>
       <h3 className="list-title">Howl's Moving Castle Cards</h3>
