@@ -30,8 +30,13 @@ class ItemList extends React.Component {
   render() {
     //definimos un nuevo array (inicialmete vacío) para incluir dentro cada item
     let newItemsArray = [];
-    //usamos el método map para recorrer el array "arrayOfItems" y que nos devuelva el array anterior ya lleno con cada item (arrayItem) junto con sus atributos personalizados
-    newItemsArray = arrayOfItems.map((arrayItem) => {
+    //definimos otro array para incluir solo aquellos productos con precio < 10€ (usando el método filter)
+    let cheapItemsArray = [];
+    //usamos el método filter para recorrer el array inicial dado: queremos que solo aparezcan aquellos productos con precio menor a 10€
+    cheapItemsArray = arrayOfItems.filter( item => item.price < 10);
+    //usamos el método map para recorrer el array de la línea anterior y que nos devuelva los items con precio <10€ junto con sus atributos personalizados
+    newItemsArray = cheapItemsArray.map((arrayItem) => {
+
       //devolvemos cada item dentro de un li
       return (
         <li>
