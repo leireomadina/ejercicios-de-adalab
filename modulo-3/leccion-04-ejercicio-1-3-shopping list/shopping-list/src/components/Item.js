@@ -16,4 +16,9 @@ class Item extends React.Component {
   }
 }
 
+//EJERCICIO 3: definimos que si no existe una prop description salga el siguiente texto (tenemos que borrar la clave description del objeto para que funcione):
+Item.defaultProps = {
+  description: "No hay descripción."
+}
+
 export default Item;

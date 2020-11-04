@@ -19,7 +19,7 @@ const arrayOfItems = [
   },
   {
     name: "Agua mineral",
-    description: "Agua de un charco del Himalaya",
+    // tenemos que eliminar la clave description para que funcione el defaultprops
     quantity: 2,
     category: "Bebida",
     price: 5,
