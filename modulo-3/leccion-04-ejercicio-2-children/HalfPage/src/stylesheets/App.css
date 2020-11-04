@@ -1,0 +1,12 @@
+.background {
+  width: 50%;
+  height: 100vh;
+  background-color: lightcoral;
+  /* cambiamos el display a inline-block para que los dos componentes HalfPage no se solapen y podamos verlos uno al lado del otro ocupando cada uno mitad de pantalla*/
+  display: inline-block;
+}
+
+.background-white {
+  display: inline-block;
+  background-color: white;
+}
