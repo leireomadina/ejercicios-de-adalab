@@ -1,0 +1,18 @@
+.item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  width: 60vw;
+}
+
+.item-list{
+  list-style: none;
+}
+
+.item-list li{
+  margin-top: 5px;
+}
