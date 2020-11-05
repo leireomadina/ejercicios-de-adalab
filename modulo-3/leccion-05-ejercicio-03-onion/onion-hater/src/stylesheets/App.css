@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.container-alert{
+  background-color: red;
+}
+
 .textarea {
   background-color: rgb(223, 238, 223);
   width: 300px;
