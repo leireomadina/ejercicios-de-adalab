@@ -1,4 +1,5 @@
 import React from "react";
+import CityImage from './CityImage';
 
 // EJERCICIO 2
 
@@ -25,6 +26,10 @@ class Destiny extends React.Component {
             <option value="Tokio">Tokio</option>
           </select>
         </label>
+        <CityImage
+          
+        
+        ></CityImage>
       </form>
     );
   }
