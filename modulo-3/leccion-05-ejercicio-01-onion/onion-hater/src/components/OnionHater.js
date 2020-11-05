@@ -1,6 +1,6 @@
-// EJERCICIO 1
-
 import React from 'react';
+
+// EJERCICIO 1
 
 const handlerAlert = event => {
   // para acceder al valor del textarea usaremos event.target.value
