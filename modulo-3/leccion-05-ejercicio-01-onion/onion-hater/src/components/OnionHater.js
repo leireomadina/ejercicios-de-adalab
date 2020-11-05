@@ -1,3 +1,5 @@
+// EJERCICIO 1
+
 import React from 'react';
 
 const handlerAlert = event => {
@@ -14,10 +16,12 @@ class OnionHater extends React.Component {
   render() {
 
     return (
-      <div>
+      <form>
+        <label htmlFor="textarea">
         {/* queremos escuchar un evento desde el textarea: usaremos el evento change */}
-        <textarea placeholder="Holi, cuéntame algo sobre las cebollas :)" onChange={handlerAlert} className="textarea"></textarea>
-      </div>
+        <textarea placeholder="Holi, cuéntame algo sobre las cebollas :)" onChange={handlerAlert} className="textarea" name="textarea" id="textarea"></textarea>
+        </label>
+      </form>
     );
   }
 }
