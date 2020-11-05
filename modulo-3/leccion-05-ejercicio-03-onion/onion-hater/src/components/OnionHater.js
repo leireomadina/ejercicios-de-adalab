@@ -30,8 +30,10 @@ class OnionHater extends React.Component {
     const container = document.querySelector(".container");
     // para acceder al valor del textarea usaremos event.target.value
     const usersText = event.target.value;
-    // si el texto escrito por el usuario contiene la palabra "cebolla" el fondo de la página se volverá rojo, y cuando se borre volverá al fondo blanco por defecto
-    if (usersText.includes("cebolla")) {
+    // usamos el método toLowerCase para que funcionen tanto mayúsculas como minúsculas (convertimos si son mayus en minus)
+    const usersTexLowerCase = usersText.toLowerCase();
+      // si el texto escrito por el usuario contiene la palabra "cebolla" el fondo de la página se volverá rojo, y cuando se borre volverá al fondo blanco por defecto
+    if (usersTexLowerCase.includes("cebolla")) {
       container.classList.add("container-alert");
       this.ishating = true;
       // alert("ODIO LA CEBOLLA");
