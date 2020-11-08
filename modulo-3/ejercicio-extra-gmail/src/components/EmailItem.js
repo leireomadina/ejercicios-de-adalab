@@ -2,7 +2,7 @@ import React from 'react';
 
 function EmailItem(props) {
   // props es un objeto de JS: es muy buena idea consolear antes del return las props para saber que está recibiendo cada componente
-  console.log(props);
+  // console.log(props);
   return (
     <tr className="cursor-pointer">
       <td>
