@@ -1,17 +1,30 @@
 import React from "react";
 
-function EmailReader(props) {
-  return (
-    <div>
+class EmailReader extends React.Component {
+    constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick (event) {
+    console.log("Me han clickado con el evento", event.currentTarget);
+    this.forceUpdate();
+  }
+  render() {  
+    // Es buena práctica pintar aquí las props para ver qué información estamos pasando
+    console.log(this.props);
+    return (
+      <div>
         <div className="col2 mt-1 pt-1">
+          {Math.random()}
           <div>
-            <h2 className="title--meidum">{props.subject}</h2>
+            <h2 className="title--meidum">{this.props.subject}</h2>
             <h3 className="title--small">
               <span className="text--bold display-inline-block mr-1">
-                {props.fromName}
+                {this.props.fromName}
               </span>
               <span className="text-normal display-inline-block">
-                &lt;{props.fromEmail}&gt;
+                &lt;{this.props.fromEmail}&gt;
               </span>
             </h3>
           </div>
@@ -26,12 +39,10 @@ function EmailReader(props) {
           </div>
         </div>
 
-        <p>
-          {props.body}
-        </p>
+        <p>{this.props.body}</p>
 
         <div className="mt-1">
-          <button className="form__btn">
+          <button className="form__btn" onClick={this.handleClick}>
             <span className="fas fa-reply"></span>
             Responder
           </button>
@@ -47,7 +58,8 @@ function EmailReader(props) {
           </button>
         </div>
       </div>
-  );
+    );
+  }
 }
 
 export default EmailReader;
