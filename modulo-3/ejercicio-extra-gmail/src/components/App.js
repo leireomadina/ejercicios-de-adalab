@@ -18,14 +18,18 @@ const renderEmails = () => {
       />
     );
   });
-
 };
 
 function App() {
 
+  const handleInboxFilter = () => {
+    console.log("App: me han clickado");
+  }
   return (
     <div className="App">
-      <Header />
+      <Header 
+        handleInboxFilter={handleInboxFilter}
+      />
 
       <table className="table">
         <tbody>

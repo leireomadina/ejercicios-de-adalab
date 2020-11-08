@@ -1,9 +1,15 @@
 import React from "react";
 
-function HeaderForm() {
+function HeaderForm(props) {
+  const handleClick = event => {
+    event.preventDefault();
+    console.log(props);
+    // llamamos al método presente en su componente madre Header (lifting):
+    props.handleInboxFilter();
+  };
   return (
       <form className="text-align-right">
-        <button className="form__btn">
+        <button className="form__btn" onClick={handleClick}>
           <span className="fas fa-inbox"></span>
           Recibidos
         </button>

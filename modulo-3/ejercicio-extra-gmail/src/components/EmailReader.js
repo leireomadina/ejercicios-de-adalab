@@ -7,16 +7,15 @@ class EmailReader extends React.Component {
   }
 
   handleClick (event) {
-    console.log("Me han clickado con el evento", event.currentTarget);
+    // console.log("Me han clickado con el evento", event);
     this.forceUpdate();
   }
   render() {  
     // Es buena práctica pintar aquí las props para ver qué información estamos pasando
-    console.log(this.props);
+    // console.log(this.props);
     return (
       <div>
         <div className="col2 mt-1 pt-1">
-          {Math.random()}
           <div>
             <h2 className="title--meidum">{this.props.subject}</h2>
             <h3 className="title--small">
