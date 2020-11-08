@@ -23,12 +23,23 @@ const renderEmails = () => {
 function App() {
 
   const handleInboxFilter = () => {
-    console.log("App: me han clickado");
+    console.log("App: me han clickado en recibidos");
   }
+
+  const handleDeleteFilter = () => {
+    console.log("App: me han clickado en papelera");
+  }
+
+  const handleTextFilter = (data) => {
+    console.log("App: me han clickado en campo de texto", data);
+  }
+
   return (
     <div className="App">
       <Header 
         handleInboxFilter={handleInboxFilter}
+        handleDeleteFilter={handleDeleteFilter}
+        handleTextFilter={handleTextFilter}
       />
 
       <table className="table">

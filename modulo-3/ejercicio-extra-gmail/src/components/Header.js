@@ -10,9 +10,11 @@ function Header(props) {
           Gmail
         </h1>
       </div>
-      
+
       <HeaderForm 
         handleInboxFilter={props.handleInboxFilter}
+        handleDeleteFilter={props.handleDeleteFilter}
+        handleTextFilter={props.handleTextFilter}
       />
     </header>
   );
