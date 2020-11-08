@@ -1,17 +1,17 @@
 import React from "react";
 
-function EmailReader() {
+function EmailReader(props) {
   return (
     <div>
         <div className="col2 mt-1 pt-1">
           <div>
-            <h2 className="title--meidum">Entradas ya a la venta</h2>
+            <h2 className="title--meidum">{props.subject}</h2>
             <h3 className="title--small">
               <span className="text--bold display-inline-block mr-1">
-                Front Fest
+                {props.fromName}
               </span>
               <span className="text-normal display-inline-block">
-                &lt;info@frontfest.org&gt;
+                &lt;{props.fromEmail}&gt;
               </span>
             </h3>
           </div>
@@ -27,14 +27,7 @@ function EmailReader() {
         </div>
 
         <p>
-          FrontFest es un evento anual y sin ánimo de lucro. Está organizado y
-          gestionado por un equipo de voluntarios y voluntarias que pertenecen a
-          la comunidad de desarrollo frontend. Celebrado por primera vez en
-          2017, pretende ser un punto de encuentro a nivel nacional,
-          principalmente en castellano, para todas aquellas personas interesadas
-          en las tecnologías de frontend, donde compartir experiencias y
-          aprender acerca de las nuevas tendencias en el sector. Y por supuesto,
-          acabar divirtiéndose en buena compañía.
+          {props.body}
         </p>
 
         <div className="mt-1">

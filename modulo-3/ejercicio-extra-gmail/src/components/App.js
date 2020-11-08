@@ -33,7 +33,12 @@ function App() {
         </tbody>
       </table>
 
-      <EmailReader />
+      <EmailReader 
+        subject={emails[0].subject}
+        fromName={emails[0].fromName}
+        fromEmail={emails[0].fromEmail}
+        body={emails[0].body}
+      />
     </div>
   );
 }
