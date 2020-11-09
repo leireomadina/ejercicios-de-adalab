@@ -36,12 +36,15 @@ class Destiny extends React.Component {
   }
 
   render() {
+    const handlerSelect = this.handlerSelect;
+
     return (
       <form>
         {/* ojo: debemos cambiar el atributo for de html por el htmlFor de React */}
         <label htmlFor="cities" className="label">
           Elige tu destino:
-        <CitySelector actionToPerform={handleValue}/>
+          {/* Pasamos por las props del componente hija CitySelector una función llamada "actionToPerform", la cual apunta al método "handerSelect" que provoca con forceUpdate el renderizado de las img */}
+        <CitySelector actionToPerform={ handlerSelect }/>
         </label>
         <p>Tu destino es viajar a {this.selectedCity}</p>
         <CityImage city={this.selectedCity}></CityImage>
