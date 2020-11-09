@@ -4,12 +4,14 @@ import EmailItem from "./EmailItem";
 import EmailReader from "./EmailReader";
 import Header from "./Header";
 // Nuestro array con objetos está en la carpeta data. "emails" no va en mayúsculas porque no es un componente
-import emails from "../data/emails.json";
+import apiEmails from "../data/emails.json";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      // metemos los emails como estado porque en el futuro los cogeremos de una api
+      emails: apiEmails,
       // almacenaremos aquí la info que el usuario escribe en el input
       inboxFilter: "",
     };
@@ -38,7 +40,7 @@ class App extends React.Component {
 
   renderEmails() {
     const inboxFilter = this.state.inboxFilter.toLowerCase();
-    return emails
+    return this.state.emails
       .filter((email) => {
         return (
           email.fromName.toLowerCase().includes(inboxFilter) ||
@@ -74,10 +76,10 @@ class App extends React.Component {
         </table>
 
         <EmailReader
-          subject={emails[0].subject}
-          fromName={emails[0].fromName}
-          fromEmail={emails[0].fromEmail}
-          body={emails[0].body}
+          subject={this.state.emails[0].subject}
+          fromName={this.state.emails[0].fromName}
+          fromEmail={this.state.emails[0].fromEmail}
+          body={this.state.emails[0].body}
         />
       </div>
     );
