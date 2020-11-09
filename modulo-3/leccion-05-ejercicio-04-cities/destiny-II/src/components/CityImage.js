@@ -3,9 +3,10 @@ import React from "react";
 class CityImage extends React.Component {
   constructor(props) {
     super(props);
+    // también podríamos meter estos datos en un objeto literal fuera de la clase
     this.cities = {
       "Buenos Aires":
-        "https://pix10.agoda.net/hotelImages/4877634/0/db7ebdd6192005597fb67a0632c3a153.jpg?s=1024x768",
+        "https://www.cronista.com/__export/1589398341205/sites/diarioelcronista/img/2020/05/13/ciudad_vacia_crop1589398340532.png_258117318.png",
       Sidney:
         "https://www.todaaustralia.com/wp-content/uploads/2018/07/sidney-sydney-australia-1170x658.jpg",
       Praga:
@@ -18,7 +19,6 @@ class CityImage extends React.Component {
   }
   render() {
     return (
-      // FALTA incluir cada ciudad del objeto en la imagen!!!!
       <img
         src={this.cities[this.props.city]}
         alt={`Imagen de ${this.props.city}`}

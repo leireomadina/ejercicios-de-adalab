@@ -13,38 +13,43 @@ const handlerSelect = (event) => {
 };
 */
 
+// EJERCICIO 4
+
 class Destiny extends React.Component {
   constructor(props) {
     super(props);
+    // valor inicial de las props antes de que el usuario seleccione una opción
+    this.selectedCity = "...";
+    // asociamos este componente al evento de tipo change
     this.handlerSelect = this.handlerSelect.bind(this);
-    this.city = city;
   }
+
   handlerSelect(event) {
-    const usersSelection = event.target.value;
-    // usersSelection === "Tokio";
-    console.log(usersSelection);
+    // asociamos el value de cada option a una constante, la cual luego asociamos a las props
+    const selectedCity = event.target.value;
+    this.selectedCity = selectedCity;
     //activamos una alerta indicando la opción seleccionada
-    alert(`Tu destino es viajar a ${usersSelection}`);
+    alert(`Tu destino es viajar a ${this.selectedCity}`);
+    // forzamos a que se ejecute la función render
     this.forceUpdate();
   }
 
   render() {
-    const handlerSelect = this.handlerSelect;
     return (
       <form>
         {/* ojo: debemos cambiar el atributo for de html por el htmlFor de React */}
         <label htmlFor="cities" className="label">
           Elige tu destino:
-          <select id="cities" name="cities" onChange={handlerSelect} className="select">
-            <option value="Buenos aires">Buenos Aires</option>
+          <select id="cities" name="cities" onChange={this.handlerSelect} className="select">
+            <option value="Buenos Aires">Buenos Aires</option>
             <option value="Sidney">Sidney</option>
             <option value="Praga">Praga</option>
             <option value="Boston">Boston</option>
             <option value="Tokio">Tokio</option>
           </select>
         </label>
-        <p>Tu destino es viajar a {this.city}</p>
-        <CityImage city={"Tokio"}></CityImage>
+        <p>Tu destino es viajar a {this.selectedCity}</p>
+        <CityImage city={this.selectedCity}></CityImage>
       </form>
     );
   }
