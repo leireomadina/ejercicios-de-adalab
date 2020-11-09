@@ -83,8 +83,9 @@ class App extends React.Component {
         </header>
         <aside className="topBanner">
           <Weather text={queTiempoHaceHoy} />
-          {/* buena práctica poner los valores numéricos entre corchetes para que ya sean values de tipo number y no haga falta hacer parteInt en un futuro */}
-          <Today day={5} month={1} year={2020} />
+          {/* buena práctica poner los valores numéricos entre corchetes para que ya sean values de tipo number y no haga falta hacer parteInt en un futuro.
+          Aunque quitemos la prop year, seguirá funcionando porque la tenemos definida como defaultProps */}
+          <Today day={5} month={1}/>
           {/* Creamos dentro de tweetData una constante para no meter directamente ahí el objeto con la info a pasar al componente Tweet */}
           <Tweet tweetData={tweetInfo}/>
           {/* Pasamos como props un array: lo hacemos como una variable para tener mayor claridad y limpieza */}

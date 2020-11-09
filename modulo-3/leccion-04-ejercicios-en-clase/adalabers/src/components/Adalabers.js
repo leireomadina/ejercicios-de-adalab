@@ -1,6 +1,8 @@
+import propTypes from 'prop-types';
 import React from 'react';
 import '../stylesheets/AdalabersList.scss';
 import AdalaberDetail from './AdalaberDetail';
+import PropTypes from 'prop-types';
 
 class Adalabers extends React.Component {
 
@@ -31,6 +33,10 @@ class Adalabers extends React.Component {
       </section>
     );
   }
+}
+
+Adalabers.propTypes = {
+  list: PropTypes.array.isRequired
 }
 
 export default Adalabers;
