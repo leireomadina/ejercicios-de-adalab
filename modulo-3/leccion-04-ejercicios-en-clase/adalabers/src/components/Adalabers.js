@@ -1,5 +1,5 @@
 import React from 'react';
-import AdalabersList from '../stylesheets/AdalabersList.scss';
+import '../stylesheets/AdalabersList.scss';
 import AdalaberDetail from './AdalaberDetail';
 
 class Adalabers extends React.Component {
@@ -13,7 +13,7 @@ class Adalabers extends React.Component {
       console.log(eachAdalaber);
       // Hacemos push de un nuevo componente (cada li)
       html.push(
-        <AdalaberDetail key={i} name ={eachAdalaber.fullname}/>
+        <AdalaberDetail key={i} name ={eachAdalaber.fullname} promo={eachAdalaber.promo} github={eachAdalaber.github}/>
       );
       console.log(eachAdalaber.fullname);
     }
