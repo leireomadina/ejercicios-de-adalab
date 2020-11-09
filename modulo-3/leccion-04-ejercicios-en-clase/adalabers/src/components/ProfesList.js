@@ -7,8 +7,9 @@ class ProfesList extends React.Component {
     // Hacemos un bucle for para recorrer la lista de profesores, a la cual accedemos por props
     for (let i = 0; i < this.props.list.length; i++) {
       // Hacemos push sobre cada elemento del array. Añadir el atributo key para que cada item tenga un identificador único.
+      let eachTeacher = this.props.list[i];
       html.push(
-      <li key={i} id={i}>{this.props.list[i]}</li>
+      <li key={i} id={i}>{eachTeacher}</li>
       )
     }
 
