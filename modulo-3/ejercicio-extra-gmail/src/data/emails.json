@@ -27,7 +27,7 @@
     "fromEmail": "node@cooperpress.com",
     "date": "20:41",
     "subject": "Node news",
-    "deleted": false,
+    "deleted": true,
     "read": true,
     "body":
       "How We 30x-ed Our Node Parallelism — An interesting write up of how one team safely increased the parallelism of their Node-based service. You might find things to argue with here, but this is real world stuff.<br/>Node v13.6.0 (Current) Released — The usual tweaks and minor improvements. perf_hooks is no longer experimental, the REPL gains zsh-style reverse searching, and there are two new assert methods for when using regular expressions (assert.match and assert.doesNotMatch)."

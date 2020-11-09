@@ -56,6 +56,8 @@ class App extends React.Component {
             from={email.fromName}
             subject={email.subject}
             time={email.date}
+            deleted={email.deleted}
+            read={email.read}
           />
         );
       });

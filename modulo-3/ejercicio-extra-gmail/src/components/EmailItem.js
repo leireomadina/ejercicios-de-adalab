@@ -1,8 +1,16 @@
 import React from 'react';
+import { isElementOfType } from 'react-dom/test-utils';
 
 function EmailItem(props) {
+  console.log(props);
   // props es un objeto de JS: es muy buena idea consolear antes del return las props para saber que está recibiendo cada componente
-  // console.log(props);
+
+
+  let deletedClass = "";
+  if(props.deleted === true) {
+    deletedClass = ""
+  }
+
   return (
     <tr className="cursor-pointer">
       <td>
