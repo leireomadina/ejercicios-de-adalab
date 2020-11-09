@@ -10,7 +10,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // metemos los emails como estado porque en el futuro los cogeremos de una api
+      // metemos los emails como estado porque en el futuro los obtendremos de un api con un fetch
       emails: apiEmails,
       // almacenaremos aquí la info que el usuario escribe en el input
       inboxFilter: "",
@@ -31,14 +31,15 @@ class App extends React.Component {
 
   handleTextFilter(data) {
     console.log("App: me han clickado en campo de texto", data.value);
-    // setState renderiza la página cada vez que el state es modificado
     this.setState({
       // la información que vamos a guardar aquí no depende del estado anterior, sino que vamos a machacar con el nuevo texto lo que haya en el this.state dentro del constructor
+      //al guardar el campo de texto del input en el state lo que hacemos es re-renderizar/volver a pintar
       inboxFilter: data.value,
     });
   }
 
   renderEmails() {
+    // es mejor usar ahora el toLowerCase() en lugar de hacerlo dentro del handler: debemos mantener intactos los datos del usuario cuando sucede el evento
     const inboxFilter = this.state.inboxFilter.toLowerCase();
     return this.state.emails
       .filter((email) => {
