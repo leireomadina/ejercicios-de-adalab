@@ -1,16 +1,17 @@
 import React from "react";
-// import React, { useState } from "react";
 import "../stylesheets/App.scss";
 import clubs from "../data/clubs.json";
+import ClubList from "./ClubList";
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     console.log(clubs);
-    return <div classnameName="App"></div>;
+    return (
+      <div>
+        App
+        <ClubList clubs={clubs} />
+      </div>
+    );
   }
 }
 

@@ -1,13 +1,23 @@
 import React from "react";
-// import React, { useState } from "react";
+import Club from "./Club";
 
 class ClubList extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
-    return <div>Holi</div>;
+    console.log(this.props.clubs);
+    const items = this.props.clubs.map((club, index) => {
+      console.log(club);
+      return (
+        <li key={index}>
+          <Club club={club} />
+        </li>
+      );
+    });
+    return (
+      <div>
+        Club list
+        <ul>{items}</ul>
+      </div>
+    );
   }
 }
 

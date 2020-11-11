@@ -1,15 +1,20 @@
 import React from "react";
-// import React, { useState } from "react";
 
-class Club extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const Club = (props) => {
+  console.log(props.club.member);
+  const items = props.club.members.map((member, index) => {
+    console.log(member);
+    return <li key={index}>{member}</li>;
+  });
 
-  render() {
-    console.log(datos);
-    return <div>Holi</div>;
-  }
-}
+  return (
+    <article>
+      <h2>{props.club.name}</h2>
+      <i className={props.club.fa} />
+      <h3>Members:</h3>
+      <ul>{items}</ul>
+    </article>
+  );
+};
 
 export default Club;
