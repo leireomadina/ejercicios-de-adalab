@@ -13,12 +13,22 @@ function App() {
 
   const [taskList, setTaskList] = useState(initialData);
 
+  const createNewTask = (newSubject, newDate) => {
+    const newtask = {
+      subject: newSubject,
+      date: newDate,
+    };
+    //no podemos usar push porque es un state, tenemos que hacerlo con set usando el spread operator para recoger todas las tareas ya existentes
+    // taskList.push(newtask);
+    setTaskList([...taskList, newtask]);
+  };
+
   return (
     <div classnameName="App">
       <main classname="container">
         <h3 classname="app__title">Lista de tareas</h3>
         <TaskList list={taskList} />
-        <TaskCreate />
+        <TaskCreate handleCreate={createNewTask} />
       </main>
     </div>
   );
