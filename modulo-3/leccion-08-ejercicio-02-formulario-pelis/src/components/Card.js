@@ -7,8 +7,8 @@ const Card = (props) => {
         <h2>{props.title}</h2>
         <p>{props.description}</p>
         <p>{props.language}</p>
-        <p></p>
-        <p></p>
+        <p>{props.age}</p>
+        <p>{props.genre}</p>
       </article>
     );
   }

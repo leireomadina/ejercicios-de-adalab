@@ -4,10 +4,14 @@ import Card from "./Card";
 import Form from "./Form";
 
 const App = () => {
+  // definimos los estados iniciales
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [language, setLanguage] = useState("Español");
+  const [language, setLanguage] = useState("");
+  const [age, setAge] = useState("");
+  const [genre, setGenre] = useState("");
 
+  //cambios de estado con respecto al value de los input
   const handleInput = (name, value) => {
     console.log("App: me escuchan");
     if (name === "title") {
@@ -16,8 +20,13 @@ const App = () => {
       setDescription(value);
     } else if (name === "language") {
       setLanguage(value);
-    }
+    } else if (name === "age") {
+      setAge(value);
+    } else if (name === "genre") {
+      setGenre(value);
+    } 
   };
+
   return (
     <div className="App">
       <header>
@@ -25,10 +34,10 @@ const App = () => {
       </header>
       <main>
         <section>
-          <Form title={title} description={description} language={language} handleInput={handleInput}/>
+          <Form title={title} description={description} language={language} age={age} genre={genre} handleInput={handleInput}/>
         </section>
         <section>
-          <Card title={title} description={description} language={language} />
+          <Card title={title} description={description} language={language} age={age} genre={genre}/>
         </section>
       </main>
     </div>
