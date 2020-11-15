@@ -1,8 +1,11 @@
 import '../stylesheets/App.scss';
+import Form from "./Form";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
+      <h1>Props, lifting y estado</h1>
+      <Form />
     </div>
   );
 }
