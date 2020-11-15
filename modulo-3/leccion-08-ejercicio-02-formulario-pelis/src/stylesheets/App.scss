@@ -1,0 +1,19 @@
+.container{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square{
+  width: 400px;
+  height: 400px;
+}
+
+.square-blue{
+  background-color: lightskyblue;
+}
+
+.square-red{
+  background-color: red;
+}
