@@ -3,6 +3,7 @@ import "../stylesheets/App.scss";
 import Form from "./Form";
 
 const App = () => {
+
   // Declaramos el estado inicial de las props mediante el hook useState
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
@@ -14,6 +15,7 @@ const App = () => {
     handleInput(inputName, inputValue);
   }
 
+  // Usamos un switch en lugar de un condicional if...else if
   const handleInput = (key, value) => {
     console.log("App: me han cambiado", key, value);
     switch (key) {
@@ -26,6 +28,7 @@ const App = () => {
     }
   };
 
+  // Hacemos que los estados de las variables address estén vacíos
   const handleReset = () => {
     console.log("Reset");
     setCity("");

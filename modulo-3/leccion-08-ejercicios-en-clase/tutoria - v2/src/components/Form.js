@@ -3,7 +3,6 @@ import Input from "./Input";
 import Reset from "./Reset";
 
 const Form = (props) => {
-
   return (
     <div>
       <Input label="Dirección: " name="address" id="adress" value={props.address} handleInputChange={props.handleInputChange}/>
