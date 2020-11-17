@@ -1,11 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './stylesheets/index.scss';
-import App from './components/App';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./stylesheets/index.scss";
+import App from "./components/App";
+// Importamos el componente HashRouter de lña librería React Router
+import { HashRouter } from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <HashRouter>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </HashRouter>,
+  document.getElementById("root")
 );
