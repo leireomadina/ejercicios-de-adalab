@@ -2,9 +2,8 @@ import React from "react";
 
 const Club = (props) => {
   console.log(props.club.member);
-  const items = props.club.members.map((member, index) => {
-    console.log(member);
-    return <li key={index}>{member}</li>;
+  const items = props.club.members.map((member) => {
+    return <li key={props.club.id}>{member}</li>;
   });
 
   return (

@@ -4,10 +4,10 @@ import Club from "./Club";
 class ClubList extends React.Component {
   render() {
     console.log(this.props.clubs);
-    const items = this.props.clubs.map((club, index) => {
+    const items = this.props.clubs.map((club) => {
       console.log(club);
       return (
-        <li key={index}>
+        <li key={club.id}>
           <Club club={club} />
         </li>
       );

@@ -1,25 +1,24 @@
 import React from "react";
-import '../stylesheets/App.scss';
+import "../stylesheets/App.scss";
 import fetchRandomUser from "../service/RandomUserService";
-import CardList from "./CardList";
+import UserList from "./UserList";
+import Filters from "./Filters";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      randomUserStore: []
+      randomUserStore: [],
     };
-
   }
 
   fetchNewRandomUser() {
-    fetchRandomUser() 
-      .then(data => {
-        this.setState({
-          randomUserStore: data.results
-        });
+    fetchRandomUser().then((data) => {
+      this.setState({
+        randomUserStore: data.results,
       });
+    });
   }
 
   render() {
@@ -27,7 +26,10 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <CardList />
+        <main>
+          <Filters />
+          <UserList />
+        </main>
       </div>
     );
   }

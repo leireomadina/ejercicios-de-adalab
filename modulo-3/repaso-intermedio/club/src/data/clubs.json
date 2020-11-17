@@ -1,10 +1,12 @@
 [
   {
+    "id": "1xd",
     "name": "Book club",
     "fa": "fas fa-glasses",
     "members": ["Rosalie Bradley", "Lula Day", "Hallie Bryant", "Antonio Martin", "Polly Nelson"]
   },
   {
+    "id": "2xd",
     "name": "Chess club",
     "fa": "fas fa-chess",
     "members": [
@@ -18,6 +20,7 @@
     ]
   },
   {
+    "id": "3xd",
     "name": "Escape room club",
     "fa": "fas fa-dungeon",
     "members": [
@@ -29,6 +32,7 @@
     ]
   },
   {
+    "id": "4xd",
     "name": "Thief club",
     "fa": "fas fa-mask",
     "members": [
@@ -43,6 +47,7 @@
     ]
   },
   {
+    "id": "5xd",
     "name": "Fight club",
     "fa": "fas fa-fist-raised",
     "members": [
@@ -54,6 +59,7 @@
     ]
   },
   {
+    "id": "6xd",
     "name": "Magic club",
     "fa": "fas fa-magic",
     "members": [
@@ -72,6 +78,7 @@
     ]
   },
   {
+    "id": "7xd",
     "name": "Live long and prosper club",
     "fa": "fas fa-hand-spock",
     "members": [

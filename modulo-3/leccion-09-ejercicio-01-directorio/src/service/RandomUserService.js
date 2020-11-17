@@ -1,5 +1,5 @@
-const URL = "https://randomuser.me/api/?results=50";
+const ENDPOINT = "https://randomuser.me/api/?results=50";
 
-const fetchRandomUser = () => fetch(URL).then(response => response.json());
+const fetchRandomUser = () => fetch(ENDPOINT).then((response) => response.json());
 
 export default fetchRandomUser;

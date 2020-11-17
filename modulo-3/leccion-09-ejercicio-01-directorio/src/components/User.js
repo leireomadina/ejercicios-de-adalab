@@ -1,16 +1,16 @@
 import React from "react";
-import Card from "./Card";
 
-class CardList extends React.Component  {
+class User extends React.Component  {
   constructor(props) {
     super(props);
   }
-
   render() {
     return (
-      <Card />
+      <div>
+        <img></img>
+      </div>
     );
   }
 }
 
-export default CardList;
+export default User;
