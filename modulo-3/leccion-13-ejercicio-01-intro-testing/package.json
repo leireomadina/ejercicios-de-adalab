@@ -1,0 +1,14 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "testing intro",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "leire",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
