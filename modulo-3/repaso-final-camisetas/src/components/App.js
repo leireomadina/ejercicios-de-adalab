@@ -11,10 +11,12 @@ console.log(fetchPromise);
 */
 
 const App = () => {
-  //ESTADO
+  // ESTADO
   const [products, setProducts] = useState([]);
+  // Creamos un nuevo estado para contener los datos que vamos a filtrar
+  const [filterText, setFilterText] = useState("");
 
-  //API
+  // API
   // Usamos el ciclo de vida de React con el hook useEffect (porque estamos usando un componente funcional) para que la petición al API se ejecute sólo una vez
   useEffect(
     () => {
@@ -28,11 +30,26 @@ const App = () => {
     // 2º parámetro de useEffect: le indica a React que vuelva a ejecutar el 1º paámetro si algo cambia => ponemos un array vacío para que React identifique  que no ha cambiado nada y entonces no se vuelva a ejecutar la llamada a la API
     []
   );
-  
+
+  // EVENTO
+  // En una función manejadora solo deberíamos modificar el estado, no hacer acciones como maps o filters: para eso haremos luego la función filteredProducts
+  const handleFilter = (filterText) => {
+    setFilterText(filterText);
+  };
+
+  // FILTRADO
+  const filteredProducts = products.filter((product) => {
+    // console.log(product.name, filterText);
+    // Pasamos los dos textos a minúsculas para evitar que el buscador funcione independientemente de si escribimos en mayus o minus
+    return product.name.toLowerCase().includes(filterText.toLowerCase());
+  });
+  console.log(filteredProducts);
+
   return (
     <>
       <div className="col2">
-        <Products products={products}/>
+        {/* Pasamos hacia abajo los productos filtrados */}
+        <Products products={filteredProducts} handleFilter={handleFilter} />
       </div>
     </>
   );

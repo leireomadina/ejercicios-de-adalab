@@ -20,7 +20,8 @@ const Products = (props) => {
   return (
     <div>
       <Title title="Listado de camisetas" />
-      <Filters />
+      {/* Pasamos por lifting la función handleFilter: este componente Products es un intermediario */}
+      <Filters handleFilter={props.handleFilter}/>
       <section className="cards">{productsItems}</section>
     </div>
   );
