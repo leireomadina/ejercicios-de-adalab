@@ -28,10 +28,7 @@ const App = () => {
     // 2º parámetro de useEffect: le indica a React que vuelva a ejecutar el 1º paámetro si algo cambia => ponemos un array vacío para que React identifique  que no ha cambiado nada y entonces no se vuelva a ejecutar la llamada a la API
     []
   );
-  // if(products.cart !== undefined) {
-  //   console.log(products.cart.items);
-  // }
-
+  
   return (
     <>
       <div className="col2">
