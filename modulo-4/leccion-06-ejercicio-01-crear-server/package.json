@@ -1,0 +1,21 @@
+{
+  "name": "leccion-06-ejercicio-01-crear-server",
+  "version": "1.0.0",
+  "description": "Creating a server with Express and Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "server"
+  ],
+  "author": "Leire Ordeñana Madina",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
