@@ -21,7 +21,8 @@ server.get('/users', (req, res) => {
   res.json(response);
 });
 
-server.post('/new-user', (req, res) => {
+// tenemos que modificar el endpoint del fetch de main.js para que coincidan
+server.post('/users/add', (req, res) => {
   console.log(`Creating the user in database with user name: "${req.body.userName}"`);
   const response = {
     result: `User created: ${req.body.userName}`
