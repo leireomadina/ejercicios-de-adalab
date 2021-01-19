@@ -14,7 +14,7 @@ server.listen(serverPort, () => {
 const staticServerPath = "./public";
 server.use(express.static(staticServerPath));
 
-server.get('/users', (req, res) => {
+server.post('/users', (req, res) => {
   const response = {
     users: [{ name: 'Sofía' }, { name: 'María' }]
   };
