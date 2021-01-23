@@ -27,7 +27,7 @@ document.querySelector(".js-btn-get-users").addEventListener("click", () => {
   // create query params
   const queryParamsFilter = `?filterByName=${inputFilterName.value}`;
 
-  fetch("http://localhost:3000/users")
+  fetch("http://localhost:3000/users" + queryParamsFilter, { method: "GET" })
     .then((response) => response.json())
     .then((responseData) => {
       console.log("Server response:", responseData);
