@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 // post new user
 
@@ -11,7 +11,7 @@ document
     // create query params
     const queryParams = `?userName=${inputName.value}&userEmail=${inputEmail.value}`;
 
-    fetch("http://localhost:3000/user" + queryParams, { method: "POST" })
+    fetch("http://localhost:3500/user" + queryParams, { method: "POST" })
       .then((response) => response.json())
       .then((responseData) => {
         console.log("Server response:", responseData);
@@ -23,16 +23,19 @@ document
 
 document.querySelector(".js-btn-get-users").addEventListener("click", () => {
   const inputFilterName = document.querySelector(".js-input-name-filter");
+  // console.log(inputFilterName);
 
   // create query params
   const queryParamsFilter = `?filterByName=${inputFilterName.value}`;
+  // console.log(queryParamsFilter);
 
-  fetch("http://localhost:3000/users" + queryParamsFilter, { method: "GET" })
+  fetch("http://localhost:3500/users" + queryParamsFilter, {method: "GET"})
     .then((response) => response.json())
     .then((responseData) => {
       console.log("Server response:", responseData);
       printJson(".js-get-users-result", responseData);
-    });
+    })
+    .catch((error) => console.log(`Ha sucedido un error: ${error}`));
 });
 
 // helper
