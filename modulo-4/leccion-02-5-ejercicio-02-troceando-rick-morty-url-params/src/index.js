@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const characters = require("./data.json");
+const data = require("./data.json");
 
 // create app server
 const app = express();
@@ -16,3 +16,15 @@ app.listen(serverPort, () => {
 });
 
 // api endpoints
+app.get("/characters/:characterId", (req, res) => {
+  const characters = data.results;
+  const characterFound = characters.filter(
+    (character) => character.id === parseInt(req.params.characterId)
+  );
+
+  if (characterFound === undefined) {
+    return res.json({ error: "Character not found" });
+  } else {
+    return res.json(characterFound);
+  }
+});
