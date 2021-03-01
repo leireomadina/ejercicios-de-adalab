@@ -17,8 +17,7 @@ app.listen(serverPort, () => {
 
 // api endpoints
 app.get("/characters/:characterId", (req, res) => {
-  const characters = data.results;
-  const characterFound = characters.filter(
+  const characterFound = data.results.find(
     (character) => character.id === parseInt(req.params.characterId)
   );
 
@@ -26,5 +25,17 @@ app.get("/characters/:characterId", (req, res) => {
     return res.json({ error: "Character not found" });
   } else {
     return res.json(characterFound);
+  }
+});
+
+app.get("/characters/:characterId/episodes", (req, res) => {
+  const characterFound = data.results.find(
+    (character) => character.id === parseInt(req.params.characterId)
+  );
+  
+  if (characterFound === undefined) {
+    return res.json({ error: "Episodes not found" });
+  } else {
+    return res.json(characterFound.episode);
   }
 });
