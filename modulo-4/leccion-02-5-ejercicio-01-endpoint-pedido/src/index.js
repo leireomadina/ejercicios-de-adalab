@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const data = require("./data.json");
+const users = require("./data.json");
 
 // create app server
 const app = express();
@@ -20,8 +20,21 @@ app.get("/users/all", (req, res) => {
   res.json(users);
 });
 
-app.get("/users/:userId", (rew, res) => {
+app.get("/users/:userId/orders/:orderId", (req, res) => {
   console.log("Url params:", req.params);
   console.log("Url param userId:", req.params.userId);
-  res.json(users);
+  console.log("Url param orderId:", req.params.orderId);
+
+  const user = users.find(
+    (user) =>
+      user.userId === parseInt(req.params.userId) &&
+      user.orderId === parseInt(req.params.orderId)
+  );
+  console.log(user);
+  
+  if (user === undefined) {
+    return res.json({ error: "Not found" });
+  } else {
+    return res.json(user);
+  }
 });
