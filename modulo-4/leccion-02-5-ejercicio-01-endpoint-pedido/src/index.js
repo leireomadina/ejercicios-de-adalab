@@ -1,0 +1,27 @@
+const express = require("express");
+const cors = require("cors");
+const data = require("./data.json");
+
+// create app server
+const app = express();
+
+// set express middleware
+app.use(express.json());
+app.use(cors());
+
+// init express aplication
+const serverPort = 3000;
+app.listen(serverPort, () => {
+  console.log(`App listening at http://localhost:${serverPort}`);
+});
+
+// api endpoints
+app.get("/users/all", (req, res) => {
+  res.json(users);
+});
+
+app.get("/users/:userId", (rew, res) => {
+  console.log("Url params:", req.params);
+  console.log("Url param userId:", req.params.userId);
+  res.json(users);
+});
